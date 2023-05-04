@@ -1,0 +1,13 @@
+{
+  "miniprogramRoot": "./",
+  "projectname": "SSIMP_wechat",
+  "description": "北镇闾山服务助手",
+  "appid": "touristappid",
+  "setting": {
+    "urlCheck": true,
+    "es6": false,
+    "postcss": false,
+    "minified": false
+  },
+  "compileType": "miniprogram"
+}
