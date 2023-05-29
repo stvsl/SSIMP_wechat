@@ -3,7 +3,8 @@ import NutUIResolver from '@nutui/nutui-taro/dist/resolver';
 
 const config = {
   projectName: 'SSIMP_wechat',
-  date: '2023-5-3',
+  date: '2023-5-29',
+  plugins: ['@tarojs/plugin-html'],
   designWidth (input) {
     if (input?.file?.replace(/\\+/g, '/').indexOf('@nutui') > -1) {
       return 375
@@ -17,7 +18,7 @@ const config = {
     375: 2 / 1
   },
   sourceRoot: 'src',
-  outputRoot: `dist/${process.env.TARO_ENV}`,
+  outputRoot: 'dist',
   plugins: ['@tarojs/plugin-html'],
   defineConstants: {
   },
@@ -98,4 +99,3 @@ module.exports = function (merge) {
   }
   return merge({}, config, require('./prod'))
 }
-

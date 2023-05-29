@@ -3,12 +3,11 @@
     <view>
       <img src="" alt="">
     </view>
-    {{ msg }}
-    <Dongdong />
+    {{ msg }} <Dongdong />
     <view class="btn">
       <nut-button type="primary" @click="handleClick('text', msg2, true)">点我</nut-button>
     </view>
-    <nut-toast :msg="msg2" v-model:visible="show" :type="type" :cover="cover" />
+    <nut-toast :msg="msg2" v-model:visible="show" :type="type" :cover="cover"/>
   </view>
 </template>
 
